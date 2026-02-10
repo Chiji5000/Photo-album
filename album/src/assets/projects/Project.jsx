@@ -35,6 +35,18 @@ import NewsPaper from "../Images/Newpaper.jpg";
 import Abra from "../Images/Abra.jpg";
 import logo from "../Images/philo_gist-full_logo2.jpg";
 import Gold from "../Images/logo2-no_3d.jpg";
+import final_whistle from "../Images/final-whistle1.png";
+import YAAK from "../Images/YAAK.jpeg";
+import new_year from "../Images/new-year.jpg";
+import our_service from "../Images/Our-Services.jpg";
+import victoria_ID from "../Images/Victoria-ID-CARD.jpg";
+import skill from "../Images/Bold-Weekend Skill-Up-Sessions-Poster.jpg";
+import digital from "../Images/Digital-Scene Weekend-Safety-Reminder.jpg";
+import fall_protection from "../Images/Flyer-Fall-Protection-Awareness.jpg";
+import did_you_know from "../Images/Flyer-Did You-Know.jpg";
+import process_safety from "../Images/Process-Safety.jpg";
+import LOTO from "../Images/LOTO.jpg";
+import free_training from "../Images/Free-Training-Flyer.jpg";  
 
 import "./project-artpal.css";
 
@@ -54,6 +66,8 @@ const Project = () => {
   ];
 
   const images = [
+    { src: YAAK, title: "YAAK", category: "Drawings & Illustrations" },
+    { src: final_whistle, title: "Final Whistle", category: "Digital Art" },
     { src: Afro_Future, title: "Afro Future", category: "Digital Art" },
     { src: jeep, title: "Jeep", category: "Photography" },
     {
@@ -68,16 +82,21 @@ const Project = () => {
     },
     { src: broom, title: "Broom", category: "Paintings & Sketches" },
     { src: Lana, title: "Lana", category: "Digital Art" },
+    { src: digital, title: "Weekend Safety Reminder", category: "Digital Art" },
     { src: shopping, title: "Shopping", category: "Drawings & Illustrations" },
     { src: love, title: "Love", category: "Paintings & Sketches" },
+    { src: new_year, title: "New Year", category: "Photography" },
     { src: Inside1, title: "Inside Success1", category: "Photography" },
     { src: fashion, title: "Fashion", category: "Digital Art" },
     { src: Inside2, title: "Inside Success2", category: "Photography" },
     { src: location, title: "Location", category: "Photography" },
+    {src: LOTO, title: "LOTO", category: "Digital Art" },
     { src: minions, title: "Minions", category: "Drawings & Illustrations" },
+    { src: our_service, title: "Our Services", category: "Photography" },
     { src: blog, title: "Unox Transport Logo", category: "Digital Art" },
     { src: know_us, title: "Get To Know Us", category: "Digital Art" },
     { src: news_paper, title: "News Paper", category: "Paintings & Sketches" },
+    {src: process_safety, title: "Process Safety", category: "Digital Art" },
     { src: sign_in, title: "Sign In", category: "Digital Art" },
     { src: transact, title: "Transact", category: "Drawings & Illustrations" },
     { src: big_boy, title: "Big Boy", category: "Photography" },
@@ -89,9 +108,15 @@ const Project = () => {
     { src: forgotpassword, title: "Forgot Password", category: "Digital Art" },
     { src: giftcard, title: "Gift Card", category: "Digital Art" },
     { src: penguin, title: "Penguin", category: "Drawings & Illustrations" },
+    {
+      src: fall_protection,
+      title: "Fall Protection Awareness",
+      category: "Digital Art",
+    },
     { src: art, title: "Art", category: "Paintings & Sketches" },
     { src: banner, title: "Banner", category: "Digital Art" },
     { src: coke, title: "Coke", category: "Photography" },
+    { src: victoria_ID, title: "Victoria ID Card", category: "Photography" },
     {
       src: fomer_portfolio,
       title: "Former Portfolio Design",
@@ -100,7 +125,13 @@ const Project = () => {
     { src: indexpage, title: "Index Page", category: "Digital Art" },
     { src: NBC_Peacock, title: "NBC Peacock", category: "Photography" },
     { src: profile, title: "Profile", category: "Photography" },
+    {src: did_you_know, title: "Did You Know?", category: "Digital Art" },
     { src: bakery, title: "Bakery", category: "Photography" },
+    {
+      src: skill,
+      title: "Bold Weekend Skill-Up-Sessions Poster",
+      category: "Photography",
+    },
     { src: palmtree, title: "Palm Tree", category: "Photography" },
     { src: cheatah, title: "Cheetah", category: "Photography" },
     {
@@ -109,6 +140,7 @@ const Project = () => {
       category: "Paintings & Sketches",
     },
     { src: Abra, title: "Abra", category: "Drawings & Illustrations" },
+    {src: free_training, title: "Free Training Flyer", category: "Digital Art" },
     { src: NewsPaper, title: "News Paper2", category: "Paintings & Sketches" },
   ];
 
