@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Project from "./assets/projects/Project.jsx";
 import Loader from "./assets/loader/Loader.jsx";
+import Footer from "./assets/Footer/Footer.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -24,7 +25,12 @@ const App = () => {
   return (
     <>
       {loading && <Loader fadeOut={fadeOut} />}
-      {!loading && <Project />}
+      {!loading && (
+        <>
+          <Project />
+          <Footer />
+        </>
+      )}
     </>
   );
 };

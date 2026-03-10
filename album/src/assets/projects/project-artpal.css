@@ -116,6 +116,14 @@ body {
     height: 80vh;
     overflow-y: auto;
     height: calc(100vh - 20vh); /* = 80% of viewport */
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .sidebar.hidden {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .gallery-section {

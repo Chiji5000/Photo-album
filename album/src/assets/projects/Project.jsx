@@ -46,7 +46,7 @@ import fall_protection from "../Images/Flyer-Fall-Protection-Awareness.jpg";
 import did_you_know from "../Images/Flyer-Did You-Know.jpg";
 import process_safety from "../Images/Process-Safety.jpg";
 import LOTO from "../Images/LOTO.jpg";
-import free_training from "../Images/Free-Training-Flyer.jpg";  
+import free_training from "../Images/Free-Training-Flyer.jpg";
 import Oyiza1 from "../Images/Oyiza1.jpg";
 import Oyiza2 from "../Images/Oyiza2.jpg";
 
@@ -60,6 +60,7 @@ const Project = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [activeFilter, setActiveFilter] = useState(null);
+  const [sidebarHidden, setSidebarHidden] = useState(false);
 
   const categories = [
     "Paintings & Sketches",
@@ -163,6 +164,24 @@ const Project = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.querySelector(".footer");
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        const threshold = window.innerHeight * 0.5; // Hide sidebar when footer is in view
+        if (footerRect.top < threshold) {
+          setSidebarHidden(true);
+        } else {
+          setSidebarHidden(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
@@ -225,7 +244,7 @@ const Project = () => {
       {/* Main Content */}
       <div className="main-container">
         {/* Left Sidebar */}
-        <aside className="sidebar">
+        <aside className={`sidebar ${sidebarHidden ? "hidden" : ""}`}>
           <div className="sidebar-section">
             <h3>CATEGORIES</h3>
             <ul className="category-list">
