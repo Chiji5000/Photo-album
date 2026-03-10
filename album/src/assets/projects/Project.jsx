@@ -47,6 +47,8 @@ import did_you_know from "../Images/Flyer-Did You-Know.jpg";
 import process_safety from "../Images/Process-Safety.jpg";
 import LOTO from "../Images/LOTO.jpg";
 import free_training from "../Images/Free-Training-Flyer.jpg";  
+import Oyiza1 from "../Images/Oyiza1.jpg";
+import Oyiza2 from "../Images/Oyiza2.jpg";
 
 import "./project-artpal.css";
 
@@ -69,6 +71,8 @@ const Project = () => {
     { src: YAAK, title: "YAAK", category: "Drawings & Illustrations" },
     { src: final_whistle, title: "Final Whistle", category: "Digital Art" },
     { src: Afro_Future, title: "Afro Future", category: "Digital Art" },
+    { src: Oyiza1, title: "Oyiza1", category: "Photography" },
+    { src: Oyiza2, title: "Oyiza2", category: "Photography" },
     { src: jeep, title: "Jeep", category: "Photography" },
     {
       src: logo,
@@ -90,13 +94,13 @@ const Project = () => {
     { src: fashion, title: "Fashion", category: "Digital Art" },
     { src: Inside2, title: "Inside Success2", category: "Photography" },
     { src: location, title: "Location", category: "Photography" },
-    {src: LOTO, title: "LOTO", category: "Digital Art" },
+    { src: LOTO, title: "LOTO", category: "Digital Art" },
     { src: minions, title: "Minions", category: "Drawings & Illustrations" },
     { src: our_service, title: "Our Services", category: "Photography" },
     { src: blog, title: "Unox Transport Logo", category: "Digital Art" },
     { src: know_us, title: "Get To Know Us", category: "Digital Art" },
     { src: news_paper, title: "News Paper", category: "Paintings & Sketches" },
-    {src: process_safety, title: "Process Safety", category: "Digital Art" },
+    { src: process_safety, title: "Process Safety", category: "Digital Art" },
     { src: sign_in, title: "Sign In", category: "Digital Art" },
     { src: transact, title: "Transact", category: "Drawings & Illustrations" },
     { src: big_boy, title: "Big Boy", category: "Photography" },
@@ -125,7 +129,7 @@ const Project = () => {
     { src: indexpage, title: "Index Page", category: "Digital Art" },
     { src: NBC_Peacock, title: "NBC Peacock", category: "Photography" },
     { src: profile, title: "Profile", category: "Photography" },
-    {src: did_you_know, title: "Did You Know?", category: "Digital Art" },
+    { src: did_you_know, title: "Did You Know?", category: "Digital Art" },
     { src: bakery, title: "Bakery", category: "Photography" },
     {
       src: skill,
@@ -140,7 +144,11 @@ const Project = () => {
       category: "Paintings & Sketches",
     },
     { src: Abra, title: "Abra", category: "Drawings & Illustrations" },
-    {src: free_training, title: "Free Training Flyer", category: "Digital Art" },
+    {
+      src: free_training,
+      title: "Free Training Flyer",
+      category: "Digital Art",
+    },
     { src: NewsPaper, title: "News Paper2", category: "Paintings & Sketches" },
   ];
 
